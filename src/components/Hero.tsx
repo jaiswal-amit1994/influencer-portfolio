@@ -86,6 +86,7 @@ const Hero = () => {
                   className="rounded-2xl md:rounded-[2rem]"
                 />
               </div>
+            
               
               {/* Decorative elements */}
               <motion.div
