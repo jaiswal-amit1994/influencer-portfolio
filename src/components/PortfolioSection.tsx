@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaPlay, FaExternalLinkAlt, FaInstagram, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 // Portfolio data structure
 interface PortfolioItem {
@@ -127,7 +128,7 @@ const PortfolioSection = () => {
                 <div className="relative aspect-[4/5]">
                   {/* Placeholder for image */}
                   <div className="absolute inset-0 bg-gray-200 border-2 border-dashed w-full h-full">
-                    <img src={itemData.src} alt="" />
+                    <Image src={itemData.src} alt=""/>
                   </div>
                   
                   {/* Platform Indicator */}
