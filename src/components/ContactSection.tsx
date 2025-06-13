@@ -22,7 +22,7 @@ const ContactSection = () => {
   return (
    <>
    
-       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-purple-50 to-white">
+       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-purple-50 to-white overflow-hidden">
       <div className="mx-auto max-w-7xl px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

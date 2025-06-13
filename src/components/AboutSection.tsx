@@ -27,7 +27,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-white to-pink-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-white to-pink-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Left Column - Text Content */}

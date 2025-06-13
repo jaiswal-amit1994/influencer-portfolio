@@ -40,15 +40,15 @@ const Header = () => {
       variants={container}
       className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm"
     >
-      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-row items-center justify-between">
         {/* Logo/Name */}
-        <motion.div variants={item} className="mb-4 md:mb-0">
+        <motion.div variants={item} className="">
           <Link href="/">
             <motion.h1
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent"
             >
-              Aisha Sharma
+              StyleByAisha
             </motion.h1>
           </Link>
         </motion.div>
@@ -56,7 +56,7 @@ const Header = () => {
         {/* Navigation */}
         <motion.nav
           variants={container}
-          className="flex-1 flex justify-center"
+          className="flex-1 flex justify-center hidden lg:flex"
         >
           <ul className="flex space-x-1 md:space-x-8">
             {navItems.map((link) => (
@@ -79,7 +79,7 @@ const Header = () => {
         {/* Right Section */}
         <motion.div
           variants={container}
-          className="flex items-center space-x-4 mt-4 md:mt-0"
+          className="flex items-center space-x-4"
         >
           {/* Social Icons */}
           <div className="flex space-x-3">
