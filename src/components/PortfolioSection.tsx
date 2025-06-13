@@ -128,7 +128,14 @@ const PortfolioSection = () => {
                 <div className="relative aspect-[4/5]">
                   {/* Placeholder for image */}
                   <div className="absolute inset-0 bg-gray-200 border-2 border-dashed w-full h-full">
-                    <Image src={itemData.src} alt=""/>
+<Image
+  src={itemData.src}
+  alt="Descriptive alt text"
+  width={400}
+  height={500}
+/>
+
+                    
                   </div>
                   
                   {/* Platform Indicator */}
