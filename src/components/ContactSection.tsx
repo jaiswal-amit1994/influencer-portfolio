@@ -31,7 +31,7 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-            Let's <span className="text-purple-600">Connect</span>
+            Lets <span className="text-purple-600">Connect</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Get in touch for collaborations, inquiries, or just to say hello!

@@ -142,7 +142,7 @@ const BrandCollaborations = () => {
                     className="bg-purple-50 rounded-xl p-5 border border-purple-100"
                   >
                     <FaQuoteLeft className="text-purple-300 text-2xl mb-3" />
-                    <p className="text-gray-700 italic mb-4">"{brand.testimonial.text}"</p>
+                    <p className="text-gray-700 italic mb-4">{brand.testimonial.text}</p>
                     
                     <div className="flex items-center justify-between">
                       <div>
@@ -187,9 +187,9 @@ const BrandCollaborations = () => {
                 <div className="relative">
                   <FaQuoteLeft className="absolute -top-6 -left-2 text-purple-300 text-4xl opacity-30" />
                   <p className="text-lg md:text-xl italic">
-                    "Aisha transformed our campaign with her creative vision and authentic approach. 
+                    Aisha transformed our campaign with her creative vision and authentic approach. 
                     Her ability to connect with audiences resulted in a 40% higher engagement rate 
-                    compared to our previous influencer partnerships."
+                    compared to our previous influencer partnerships.
                   </p>
                   <div className="mt-6 flex items-center gap-4">
                     <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
