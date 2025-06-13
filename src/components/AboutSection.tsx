@@ -56,9 +56,9 @@ const AboutSection = () => {
               variants={item}
               className="text-gray-600 mb-6 text-lg leading-relaxed"
             >
-              Hey there! I'm Aisha Sharma, a passionate storyteller capturing the world's beauty through my lens. 
-              What started as sharing travel diaries has grown into a mission to inspire authentic exploration 
-              and mindful living.
+              Hey there! I&apos;m Aisha Sharma, a passionate storyteller capturing the world&apos;s beauty through my lens. 
+  What started as sharing travel diaries has grown into a mission to inspire authentic exploration 
+  and mindful living.
             </motion.p>
             
             <motion.div variants={item} className="mb-8">
@@ -94,8 +94,8 @@ const AboutSection = () => {
             <motion.div variants={item}>
               <h4 className="font-bold text-lg text-gray-800 mb-3">My Mission</h4>
               <p className="text-gray-600 italic border-l-4 border-pink-500 pl-4 py-2">
-                "To inspire authentic exploration and showcase how travel can be both luxurious and sustainable, 
-                creating meaningful connections between cultures and communities."
+                To inspire authentic exploration and showcase how travel can be both luxurious and sustainable, 
+  creating meaningful connections between cultures and communities.
               </p>
             </motion.div>
           </motion.div>
