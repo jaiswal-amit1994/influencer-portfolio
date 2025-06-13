@@ -58,7 +58,7 @@ const BrandCollaborations = () => {
       logo: "/brands/gourmet-explorers.png",
       campaign: "Culinary journey through Mediterranean cuisine",
       testimonial: {
-        text: "Aisha's food content created a 35% increase in our app downloads. Her ability to showcase culinary experiences is unmatched.",
+        text: "Aisha food content created a 35% increase in our app downloads. Her ability to showcase culinary experiences is unmatched.",
         author: "Elena Rodriguez",
         role: "Partnership Lead"
       }
