@@ -192,7 +192,7 @@ const BrandCollaborations = () => {
                     compared to our previous influencer partnerships.
                   </p>
                   <div className="mt-6 flex items-center gap-4">
-                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                    <div className="bg-gray-200 flex-none border-2 border-dashed rounded-xl w-16 h-16" />
                     <div>
                       <p className="font-bold text-lg">Jennifer Martinez</p>
                       <p className="text-purple-200">Global Brand Director, Luxury Escapes</p>

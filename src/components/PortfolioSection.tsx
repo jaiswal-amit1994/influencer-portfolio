@@ -17,7 +17,7 @@ interface PortfolioItem {
 
 const PortfolioSection = () => {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
-  
+
   // Sample portfolio data
   const portfolioItems: PortfolioItem[] = [
     {
@@ -108,7 +108,7 @@ const PortfolioSection = () => {
         </motion.div>
 
         {/* Portfolio Grid */}
-        <motion.div 
+        <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -116,28 +116,29 @@ const PortfolioSection = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {portfolioItems.map((itemData) => (
-            <motion.div 
+            <motion.div
               key={itemData.id}
               variants={item}
               whileHover={{ y: -10 }}
               className="group relative cursor-pointer"
               onClick={() => setSelectedItem(itemData)}
             >
-              <div className="overflow-hidden shadow-xl h-full">
+              <div className="overflow-hidden h-full">
                 {/* Item Image/Thumbnail */}
                 <div className="relative aspect-[4/5]">
                   {/* Placeholder for image */}
-                  <div className="absolute inset-0 bg-gray-200 border-2 border-dashed w-full h-full">
-<Image
-  src={itemData.src}
-  alt="Descriptive alt text"
-  width={400}
-  height={500}
-/>
+                  <div className="absolute inset-0 bg-gray-200 w-full h-full">
+                    <Image
+                    className="w-full"
+                      src={itemData.src}
+                      alt="Descriptive alt text"
+                      width={400}
+                      height={500}
+                    />
 
-                    
+
                   </div>
-                  
+
                   {/* Platform Indicator */}
                   {itemData.platform && (
                     <div className="absolute top-4 right-4 bg-white p-2 shadow-lg">
@@ -148,7 +149,7 @@ const PortfolioSection = () => {
                       )}
                     </div>
                   )}
-                  
+
                   {/* Video Play Button */}
                   {itemData.type === 'video' && (
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -157,14 +158,14 @@ const PortfolioSection = () => {
                       </div>
                     </div>
                   )}
-                  
+
                   {/* Brand Tag */}
                   {itemData.brand && (
                     <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
                       <span className="font-medium text-pink-600">{itemData.brand}</span>
                     </div>
                   )}
-                  
+
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                     <p className="text-white text-lg font-medium">{itemData.caption}</p>
@@ -183,7 +184,7 @@ const PortfolioSection = () => {
           className="text-center mt-12"
         >
           <motion.button
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               backgroundColor: "#fdf2f8"
             }}
@@ -197,19 +198,19 @@ const PortfolioSection = () => {
 
       {/* Portfolio Modal */}
       {selectedItem && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedItem(null)}
         >
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             className="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <button 
+            <button
               className="absolute top-4 right-4 text-white bg-black/30 hover:bg-black/50 rounded-full p-2 z-10"
               onClick={() => setSelectedItem(null)}
             >
@@ -217,7 +218,7 @@ const PortfolioSection = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            
+
             <div className="aspect-video bg-gray-200 relative">
               {/* Placeholder for content */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400/30 to-pink-500/30 flex items-center justify-center">
@@ -227,7 +228,7 @@ const PortfolioSection = () => {
                     <p className="text-xl text-white mb-6">In collaboration with {selectedItem.brand}</p>
                   )}
                   {selectedItem.link ? (
-                    <a 
+                    <a
                       href={selectedItem.link}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -242,7 +243,7 @@ const PortfolioSection = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-2">

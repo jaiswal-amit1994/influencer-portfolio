@@ -209,7 +209,7 @@ const ContactSection = () => {
                   ></textarea>
                 </div>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between flex-col-reverse md:flex-row">
                   <div className="text-sm text-gray-500">
                     <p>Typically replies within 24 hours</p>
                   </div>

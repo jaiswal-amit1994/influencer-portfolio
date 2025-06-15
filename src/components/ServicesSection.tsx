@@ -136,7 +136,7 @@ const ServicesSection = () => {
                 onClick={() => toggleService(service.id)}
               >
                 <div className="flex items-center gap-6">
-                  <div className={`${service.color} w-14 h-14 rounded-full flex items-center justify-center text-white text-xl`}>
+                  <div className={`${service.color} w-14 h-14 rounded-full flex-none flex items-center justify-center text-white text-xl`}>
                     {service.icon}
                   </div>
                   <div>

@@ -42,7 +42,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-l-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  className="flex-1 w-[150] px-4 py-3 border border-gray-300 rounded-l-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 />
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -208,7 +208,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-600 text-sm order-2 md:order-1">
-            © {new Date().getFullYear()} StyleByAisha. All rights reserved.
+            © {new Date().getFullYear()} Aisha sharma. All rights reserved.
           </div>
           
           <div className="flex items-center gap-6 order-1 md:order-2">

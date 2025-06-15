@@ -48,7 +48,7 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent"
             >
-              StyleByAisha
+              A.
             </motion.h1>
           </Link>
         </motion.div>
