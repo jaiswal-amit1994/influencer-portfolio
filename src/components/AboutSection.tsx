@@ -69,7 +69,7 @@ const AboutSection = () => {
               variants={item}
               className="text-gray-600 mb-6 text-lg leading-relaxed"
             >
-              Hey there! I'm Aisha Sharma, a passionate storyteller capturing the world's beauty through my lens. 
+              Hey there! I am Aisha Sharma, a passionate storyteller capturing the worlds beauty through my lens. 
               What started as sharing travel diaries has grown into a mission to inspire authentic exploration 
               and mindful living.
             </motion.p>

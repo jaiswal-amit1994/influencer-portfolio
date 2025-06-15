@@ -192,7 +192,7 @@ const Preloader = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <p>Discovering the world's hidden gems...</p>
+            <p>Discovering the worlds hidden gems...</p>
           </motion.div>
         </motion.div>
       )}
